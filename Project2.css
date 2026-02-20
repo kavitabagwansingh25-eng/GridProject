@@ -1,0 +1,53 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    width: 500px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 150px 1fr 1fr;
+    grid-template-rows: 70px 1fr 1fr 70px;
+    gap:0;
+    margin-top: 20px;
+    border: 5px solid black;
+}
+
+
+.header{
+    grid-column: 1 / 4;
+    background: linear-gradient(to right, rgb(132, 73, 204), rgb(173, 125, 220));
+}
+
+.sidebar{
+    grid-row: 2 / 4;
+    background: linear-gradient(to bottom, rgb(55, 192, 171), rgb(120, 230, 210));
+}
+
+.content1{
+    grid-column: 2 / 4;
+    background: linear-gradient(to bottom right, rgb(73, 121, 161), rgb(135, 227, 235));
+}
+
+.content2,
+.content3{
+    background: linear-gradient(to bottom right, rgb(73, 121, 161), rgb(135, 227, 235));
+}
+
+.footer{
+    grid-column: 1 / 4;
+    background: linear-gradient(to right, rgb(132, 94, 178), rgb(173, 125, 220));
+}
+
+.container div{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+
+}
